@@ -9,7 +9,7 @@
         <br /><br />
         So if we have <b>M</b> points in the circle and <b>N</b> total points, the formula would be:
         <br /><br/>
-        <p class="text-center"><b>PI = 4 * N / M</b></p>
+        <p class="text-center"><b>PI = 4 * M / N</b></p>
         <br/>
         The author lets the user to set key variables – the number of points to generate and the length of the square’s side. 
         Basing on that we can watch how 
