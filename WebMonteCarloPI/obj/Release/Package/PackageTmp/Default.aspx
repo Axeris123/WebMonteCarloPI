@@ -10,7 +10,7 @@
     <br/>
 
     <div class="form-group">
-        <asp:Label ID="LBIterations" class="col-md-4 control-label" runat="server" Text="How many random points? (>0)"></asp:Label>
+        <asp:Label ID="LBIterations" class="col-md-4 control-label" runat="server" Text="How many random points? (1-10000000)"></asp:Label>
         <asp:TextBox ID="TBIterations" class="form-control input-md" runat="server" type="number"></asp:TextBox>
     </div>
 
