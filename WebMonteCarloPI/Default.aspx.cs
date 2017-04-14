@@ -21,7 +21,7 @@ namespace WebMonteCarloPI
         
         protected void Page_Load(object sender, EventArgs e)
         {
-        
+            
         }
        
         private void drawRectangle()
@@ -67,19 +67,26 @@ namespace WebMonteCarloPI
             else
             {
                 graphics.DrawRectangle(rectanglePen, new Rectangle(0, 0, side, side));
-                graphics.DrawEllipse(rectanglePen, new Rectangle(0, 0, side, side));
+                graphics.DrawEllipse(ellipsePen, new Rectangle(0, 0, side, side));
 
                 while (i < iterations)
                 {
                     x = rnd.Next(0, side); // points in rectangle
                     y = rnd.Next(0, side);
 
-                    graphics.FillRectangle(Brushes.Black, x, y, 2, 2); //drawing point       
+                    float center = side / 2;
 
-                    if (x * x + y * y <= side * side) // Is the point in the circle?
+                    float Cx = x - center;
+                    float Cy = y - center;
+
+                    if (Cx * Cx + Cy * Cy <= side/2 * side/2) // Is the point in the circle?
                     {
+                        graphics.FillRectangle(Brushes.Green, x, y, 2, 2); //drawing point (green)
                         ++numInCircle;
                     }
+                    else
+                        graphics.FillRectangle(Brushes.Blue, x, y, 2, 2); //drawing point (blue)
+                    
                     ++total;
 
                     i++;
