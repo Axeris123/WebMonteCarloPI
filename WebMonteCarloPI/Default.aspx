@@ -15,7 +15,7 @@
     </div>
 
     <div class="form-group">
-        <asp:Label ID="LBSide" class="col-md-4 control-label" runat="server" Text="How big should the square's side be? (100-800)"></asp:Label>
+        <asp:Label ID="LBSide" class="col-md-4 control-label" runat="server" Text="How long should the side of a square be? (100-800)"></asp:Label>
         <asp:TextBox ID="TBSide" class="form-control input-md" runat="server" type="number"></asp:TextBox>
     </div>
     
