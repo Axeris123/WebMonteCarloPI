@@ -45,7 +45,7 @@ namespace WebMonteCarloPI
             { 
                 iterations = Convert.ToInt32(TBIterations.Text);
 
-                if (iterations > 0) //check if iteration value is bigger than 0
+                if (iterations > 0 && iterations < 1000000) //check if iteration value is bigger than 0
                 {
                     side = Convert.ToInt32(TBSide.Text);
 
