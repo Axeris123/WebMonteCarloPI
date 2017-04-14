@@ -87,7 +87,7 @@ namespace WebMonteCarloPI
 
                 piApproximation = 4.0 * ((double)numInCircle / (double)total);
 
-                LBResult.Text = "Pi calculated with <b>" + iterations.ToString() + "</b> random points and <b>"+ side.ToString() +"</b> rectangle side size.\n";
+                LBResult.Text = "Pi calculated with <b>" + iterations.ToString() + "</b> random points and <b>"+ side.ToString() +"</b> side of the square size.\n";
                 LBResult.Text = LBResult.Text + "Approximated Pi = " + piApproximation.ToString();
 
                 // saving the image

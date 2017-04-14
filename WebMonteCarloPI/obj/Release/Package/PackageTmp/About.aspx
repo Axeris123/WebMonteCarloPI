@@ -11,7 +11,7 @@
         <br /><br/>
         <p class="text-center"><b>PI = 4 * M / N</b></p>
         <br/>
-        The author lets the user to set key variables – the number of points to generate and the length of the square’s side. 
+        The author lets the user to set key variables – the number of points to generate and the length of the side of the square. 
         Basing on that we can watch how 
         approximation gets less or more accurate, depending on the values we used. The program also implements graphic 
         representation of calculations, which helps to get more intuitive understanding of how the calculations depends 
